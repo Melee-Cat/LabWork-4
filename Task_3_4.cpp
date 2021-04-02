@@ -43,7 +43,7 @@ ostream& operator<<(ostream& outputStream, const String & s) // Перегруж
 istream& operator>>(istream& inputStream, String & s) // Перегруженный оператор для ввода значения строки из потока ввода
 {
     inputStream >> s.value;
-    for (int i=0; s.value[i] != '\0'; i++) // Вычисление введенной строки
+    for (int i=0; s.value[i] != '\0'; i++) // Вычисление длинны введенной строки
         s.length+=1;
     return inputStream;
 }
